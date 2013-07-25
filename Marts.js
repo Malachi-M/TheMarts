@@ -42,7 +42,7 @@ function scroll(){
         }else{
             alert("Bummer! Your browser does not support XMLHTTP!");
         }
-        var url="getImages.php?n="+n;
+        var url="Marts.php?n="+n;
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
         n += 9;
