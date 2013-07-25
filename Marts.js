@@ -13,7 +13,7 @@ function putImages() {
             var files = resp.split(";");
 
             var j = 0;
-            for(i=0; i<files.length; i++){
+            for(var i=0; i<files.length; i++){
                 if(files[i] != ""){
                     document.getElementById("container").innerHTML += '';
                 }else if(j === 3 || j === 6){
