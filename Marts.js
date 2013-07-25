@@ -7,7 +7,7 @@ var xmlhttp;
 
 function putImages() {
     
-    if (xmlhttp.readyState == 4 ){
+    if (xmlhttp.readyState === 4 ){
         if(xmlhttp.responseText){
             var resp = xmlhttp.responseText.replace("\r\n", "");
             var files = resp.split(";");
@@ -16,8 +16,8 @@ function putImages() {
             for(i=0; i<files.length; i++){
                 if(files[i] != ""){
                     document.getElementById("container").innerHTML += '';
-                }else if(j == 3 || j == 6){
-                    document.getElementById("container").innerHTML += '<p>'+(n-1)+" Images Displayd | <a href='header'>top</a></p><hr />";
+                }else if(j === 3 || j === 6){
+                    document.getElementById("container").innerHTML += '<p>'+(n-1)+" Images Displayed | <a href='header'>top</a></p><hr />";
                 j = 0;
                 }
             }
@@ -27,7 +27,7 @@ function putImages() {
 
 function scroll(){
     
-    if(navigator.appName == "Microsoft Internet Explorer"){
+    if(navigator.appName === "Microsoft Internet Explorer"){
         scrollPosition = document.documentElement.scrollTop;
     }else{
         scrollPosition = window.pageYOffset;
