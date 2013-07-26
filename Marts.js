@@ -51,8 +51,8 @@ function scroll(){
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
         n += 9;
-        contentHeight += 800;
         xmlhttp.onreadystatechange = putImages;
+         contentHeight += 800;
     }
 }
 
