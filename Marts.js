@@ -18,8 +18,7 @@ function putImages() {
                     document.getElementById("photostream").innerHTML += '<a href="img/'+files[i]+'"><img src="Medium/'+files[i]+'" /></a>';
                     j++;
                     if(j === 3 || j === 6){
-                    document.getElementById("photostream").innerHTML += '<p>'+(n-1)+" Images Displayed | <a href='header'>top</a></p><hr />";
-                    }else if(j === 9){
+                    document.getElementById("photostream").innerHTML += '<br />';
                         document.getElementById("photostream").innerHTML += '<p>'+(n-1)+" Images Displayed | <a href='#top'>Top</a></p><hr />";
                      j = 0;
                     }
