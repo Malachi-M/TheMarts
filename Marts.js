@@ -40,12 +40,14 @@ function scroll(){
         if(window.XMLHttpRequest){
             //Firefox, Opera, Safari
             xmlhttp = new XMLHttpRequest();
-        }else if(window.ActiveXObject){
+        }else{ 
+            if(window.ActiveXObject){
                 //Internet Explorer
                 xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }else{
+            } else{
             alert("Bummer! Your browser does not support XMLHTTP!");
-        }
+            }
+        }    
         var url="Marts.php?n="+n;
         xmlhttp.open("GET", url, true);
         xmlhttp.send();
