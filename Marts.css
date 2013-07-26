@@ -29,7 +29,7 @@ p{
 a{
     color:#444;
 }
-.photostream a{
+#photostream a{
     display:inline-block;
     width: 19%;
     margin: 3%;
