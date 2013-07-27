@@ -20,7 +20,7 @@ function putImages() {
                     if(j === 3 || j === 6){
                     document.getElementById("photostream").innerHTML += '<br />';
                     }else if(j === 9){
-                    document.getElementById("photostream").innerHTML += '<p>'+(n-1)+" Images Displayed | <a href='#top'>Top</a></p><hr />";
+                    document.getElementById("photostream").innerHTML += '<p>'+(n-1)+" Images Displayed | <a href='#top'>Top</a></p><br /><hr />";
                      j = 0;
                     }
                 }
