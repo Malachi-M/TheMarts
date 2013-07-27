@@ -1,10 +1,10 @@
 <?php
 
-    $dir = "Medium";
+    $dir = "images";
     if(is_dir($dir)){
         if($dd = opendir($dir)){
             while(($f = readdir($dd)) !== false)
-                if($f !="." && $f != "..")
+                if(is_file($dir."/".$f))
                     $files[] = $f;
             closedir($dd);
 }
