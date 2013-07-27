@@ -1,6 +1,6 @@
 <?php
 
-    $dir = "Medium";
+    $dir = "images";
     if(is_dir($dir)){
         if($dd = opendir($dir)){
             while(($f = readdir($dd)) !== false)
