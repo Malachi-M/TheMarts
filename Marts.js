@@ -15,7 +15,7 @@ function putImages() {
             var j = 0;
             for(var i=0; i<files.length; i++){
                 if(files[i] != ""){
-                    document.getElementById("photostream").innerHTML += '<a href="img/'+files[i]+'"><img src="Medium/'+files[i]+'" /></a>';
+                    document.getElementById("photostream").innerHTML += '<a href="images/'+files[i]+'"><img src="images/Medium/'+files[i]+'" /></a>';
                     j++;
                     if(j === 3 || j === 6){
                     document.getElementById("photostream").innerHTML += '<br />';
